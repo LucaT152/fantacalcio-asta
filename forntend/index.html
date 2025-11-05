@@ -1,35 +1,540 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Asta-Fantacalcio</title>
+    <title>Asta Fantacalcio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="authors" content="Luca Latorre, Gerardo  Saverio" />
-    <meta name="description" content="Sito per aste fantacalcio" />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, Fantacalcio, Asta-Live, Serie A"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="page">
-      <div class="header">
-        <div class="logo"></div>
-        <div class="navigation-list">
-          <nav class="header-nav-menu" role="navigation">
-            <ul class="nav-list" role="menubar">
-              <li><a href="index.html">Home</a></li>
-            </ul>
-          </nav>
+    <!-- HEADER SEMPLICE -->
+    <div class="header">
+      <h1>Fantacalcio Asta</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="asta.html" class="active">Asta</a>
+      </nav>
+    </div>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <div class="container">
+      <!-- INFO CREDITI -->
+      <div class="crediti-box">
+        <h2>I Tuoi Crediti</h2>
+        <div class="crediti-info">
+          <div>Totali: <strong>500</strong></div>
+          <div>Spesi: <strong>0</strong></div>
+          <div>Rimanenti: <strong>500</strong></div>
         </div>
       </div>
-      <div class="content">
-        <div class="Mini-Elenco-Squadre"></div>
-        <div class="Chimata-Giocatori"></div>
-        <div class="Elenco-Squadre">
-          <div></div>
+
+      <!-- GIOCATORE IN ASTA -->
+      <div class="giocatore-asta">
+        <h2>Giocatore in Asta</h2>
+        <div class="giocatore-card">
+          <h3>Cristiano Ronaldo</h3>
+          <p>Attaccante - Al Nassr</p>
+          <div class="prezzo">Prezzo: €25M</div>
+          <div class="bottoni">
+            <button>+1M</button>
+            <button>+5M</button>
+            <button class="conferma">CONFERMA</button>
+          </div>
         </div>
+      </div>
+
+      <!-- SQUADRE -->
+      <div class="squadre-container">
+        <h2>Le Tue Squadre</h2>
+
+        <!-- SQUADRA 1 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #1</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 2 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #2</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 3 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #3</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 4 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #4</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 5 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #5</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 6 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #6</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 7 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #7</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SQUADRA 8 -->
+        <div class="squadra">
+          <div class="squadra-header">
+            <h3>Team #8</h3>
+            <div class="crediti">Crediti: 500</div>
+          </div>
+
+          <!-- PORTERI -->
+          <div class="ruolo">
+            <h4>Portieri (3)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- DIFENSORI -->
+          <div class="ruolo">
+            <h4>Difensori (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- CENTROCAMPISTI -->
+          <div class="ruolo">
+            <h4>Centrocampisti (8)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+
+          <!-- ATTACCANTI -->
+          <div class="ruolo">
+            <h4>Attaccanti (6)</h4>
+            <div class="giocatori-grid">
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+              <div class="slot">-</div>
+            </div>
+          </div>
+        </div>
+        <!-- Aggiungi altre squadre qui copiando la struttura sopra -->
       </div>
     </div>
   </body>
