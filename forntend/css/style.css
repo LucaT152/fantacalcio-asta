@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: clamp(14px, 1vw + 0.5rem, 18px);
 }
 
 /* ======== HEADER ======== */
@@ -50,7 +51,7 @@ body {
 .container {
   padding: 2rem;
   flex: 1;
-  max-width: 1200px;
+  max-width: 80vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,6 +129,21 @@ body {
 }
 
 /* ======== SEZIONE SQUADRE ======== */
+
+.squadre-wrapper {
+  grid-column: span 2;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.squadre-wrapper h2 {
+  color: #16a085;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
 .squadre-container {
   grid-column: span 2;
   background-color: #ffffff;
@@ -136,21 +152,18 @@ body {
   padding: 1.5rem;
   /* Layout in orizzontale */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* ← impedisce di andare a capo */
+  overflow-x: auto; /* ← abilita lo scroll orizzontale */
   gap: 1.5rem;
-  justify-content: center; /* o 'center' se vuoi centrare */
+  justify-content: flex-start; /*centro il contenuto */
 }
 
-.squadre-container h2 {
-  color: #16a085;
-  margin-bottom: 1rem;
-  width: 100%; /* fa sì che il titolo occupi tutta la riga */
-}
-
+/* Ogni squadra = card */
 .squadra {
-  margin-bottom: 2rem;
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .squadra-header {
