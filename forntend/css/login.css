@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* usa tutta l’altezza della finestra */
+  height: 80vh; /* usa tutta l’altezza della finestra */
 }
 .position {
   background-color: white;
