@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Fantacalcio Asta</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html" class="active">Login</a>
+      </nav>
+    </div>
+
+    <div class="login">
+      <div class="position">
+        <!-- === FORM LOGIN === -->
+        <form id="form-login" class="form-visibile">
+          <h6>Login</h6>
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Accedi</button>
+          <p class="switch">
+            Non hai un account?
+            <a href="#" id="switch-registrati">Registrati</a>
+          </p>
+        </form>
+
+        <!-- === FORM REGISTRAZIONE === -->
+        <form id="form-registrazione" class="form-nascosto">
+          <h6>Registrazione</h6>
+          <input type="text" placeholder="Nome" />
+          <input type="text" placeholder="Cognome" />
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button type="submit">Registrati</button>
+          <p class="switch">
+            Hai già un account?
+            <a href="#" id="switch-login">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
