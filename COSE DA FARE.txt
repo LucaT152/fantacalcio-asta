@@ -1,0 +1,21 @@
+COSE DA FARE:
+
+1- Decidere come vogliamo creare le squadre--> maniera dinamica con pulsanti crea squadra / lasciamo default 10 squadre
+
+2- Capire cosa fare nei tuoi crediti in alto a sinistra (idea sviluppare la parte di pre asta ovvero cambio dei nomi alle squadre, con prima la scelta con un menu a tendina del nome da modificare e in seguito una casella di testo dove è possibile inserire il nome nuovo
+
+3- Lavorare sul login e registrazione (dove registra come si fa?)
+
+4- Capire come si fa a inserire un giocatore nel giusto spazio (sicuro con js, ma come decidere lo slot giusto?)
+
+5- capire come fare il database che contiene i giocatori
+
+6- sviluppare tutti il backhand in python che gestisce l'asta con quindi ogni squadra con rispettivi crediti e giocatori presi in slot.
+
+7-come fare in modo che l'asta e quindi la pagina dal momento in cui un'asta è iniziata e sia finita rimanga attiva nel senso che se uno ricarica la pagina i giocatori devono rimanere nei loro posti e l'asta puo andare avanti.
+
+8- far si che il time si incrementi ogni offerta ricevuta e che il prezzo venga aggiornato visivamente con possibile riquadro affianco al prezzo con il nome della squadra che ha offerto in quel momento. 
+
+9- capire come gestire la scelta del giocatore chiamato in asta (possibile lista di giocatori ordinabile per ruolo prezzo oppure ordine alfabetico, con rispettiva elininazione dalla lista in caso il giocatore fosse gia stato chiamato)
+
+10- 

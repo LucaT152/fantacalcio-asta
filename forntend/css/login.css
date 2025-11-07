@@ -7,7 +7,8 @@
 }
 
 body {
-  background: #f0f2f5; /* colore di sfondo chiaro */
+  background: white;
+  background-size: cover;
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: clamp(14px, 1vw + 0.5rem, 18px);
@@ -50,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* usa tutta l’altezza della finestra */
+  height: 80vh;
 }
 .position {
   display: flex;
@@ -75,12 +76,13 @@ form {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding-block-end: 10px;
   width: 100%;
 }
 
 input {
-  width: 80%;
-  padding: 10px 12px;
+  width: 100%;
+  padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -90,7 +92,7 @@ input {
 
 button {
   width: 80%;
-  padding: 10px 12px;
+  padding: 10px;
   border: none;
   border-radius: 8px;
   font-size: clamp(14px, 1vw + 0.2rem, 18px); /* si adatta alla finestra */
