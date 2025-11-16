@@ -32,13 +32,15 @@
       <div class="giocatore-asta">
         <h2>Giocatore in Asta</h2>
         <div class="giocatore-card">
-          <h3>Cristiano Ronaldo</h3>
+          <h3 id="nomeCalciatore">Cristiano Ronaldo</h3>
           <p>Attaccante - Al Nassr</p>
-          <div class="prezzo">Prezzo: €25M</div>
+          <div class="prezzo">
+            Prezzo: €<span id="prezzo">25</span>M
+          </div>
           <div class="bottoni">
-            <button>+1M</button>
-            <button>+5M</button>
-            <button class="conferma">CONFERMA</button>
+            <button id="btn1">+1M</button>
+            <button id="btn2">+5M</button>
+            <button id="conferma" class="conferma">CONFERMA</button>
           </div>
         </div>
       </div>
@@ -1137,5 +1139,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
